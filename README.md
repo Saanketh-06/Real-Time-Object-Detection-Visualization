@@ -1,24 +1,34 @@
 # Real-Time Object Detection and Visualization
 
-AI-powered real-time object detection system using YOLOv8, OpenCV, and Streamlit.
+AI-powered real-time object detection using YOLOv8, OpenCV, and Streamlit.
+
+---
 
 ## Features
 
 - Real-time webcam detection
-- Video upload support
-- YOLOv8 object detection
-- FPS visualization
+- Video upload detection
+- FPS monitoring
 - Bounding box visualization
-- Streamlit dashboard
+- YOLOv8 object detection
 
-## Tech Stack
-
-- Python
-- OpenCV
-- YOLOv8
-- Streamlit
+---
 
 ## Installation
 
 ```bash
 pip install -r requirements.txt
+
+streamlit run app.py
+
+
+---
+
+# 7. Download YOLO Model
+
+Open terminal inside VS Code:
+
+```bash
+pip install ultralytics
+
+yolo predict model=yolov8n.pt source='https://ultralytics.com/images/bus.jpg'
